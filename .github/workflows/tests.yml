@@ -1,0 +1,128 @@
+# Test run against the live site https://t9a-community.com, started by hand only
+# (Actions > Tests > Run workflow). Every test downloads the site, against the
+# Netlify account's monthly allowance, so Chrome only is the default and there is
+# no schedule. The network fence in tests/support/test.ts keeps every form post,
+# function call and third-party request inside the browser.
+#
+# The run's Playwright reports and PDF/CSV test report are kept as an artifact
+# and published to GitHub Pages (latest run only).
+name: Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      packs:
+        description: "Test packs"
+        type: choice
+        default: web,mobile,a11y
+        options:
+          - web,mobile,a11y
+          - web
+          - mobile
+          - a11y
+          - web,mobile
+      browsers:
+        description: "Browsers (each test downloads the live site)"
+        type: choice
+        default: chrome
+        options:
+          - chrome
+          - chrome,edge,firefox
+      publish:
+        description: "Publish the report to GitHub Pages"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Packs ${{ inputs.packs }} on ${{ inputs.browsers }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tests/package-lock.json
+      - run: npm ci
+
+      - name: Install browsers
+        run: |
+          npx playwright install --with-deps chrome
+          if [[ "${{ inputs.browsers }}" == *edge* ]]; then npx playwright install --with-deps msedge; fi
+          if [[ "${{ inputs.browsers }}" == *firefox* ]]; then npx playwright install --with-deps firefox; fi
+
+      - name: Run the packs
+        id: run
+        continue-on-error: true
+        run: node run-packs.mjs --packs=${{ inputs.packs }} --browsers=${{ inputs.browsers }}
+
+      - name: Keep the reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports-${{ github.run_number }}
+          path: |
+            tests/reports/ui/
+            tests/reports/a11y/
+            tests/reports/*.pdf
+            tests/reports/*.csv
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Build the report site
+        if: always() && inputs.publish
+        working-directory: .
+        run: |
+          mkdir -p site
+          cp .github/pages/index.html site/
+          for d in ui a11y; do [ -d "tests/reports/$d" ] && cp -r "tests/reports/$d" "site/$d"; done
+          pdf=$(ls -t tests/reports/*.pdf 2>/dev/null | head -1 || true)
+          [ -n "$pdf" ] && cp "$pdf" site/test-report.pdf
+          sed -i \
+            -e "s|{{RUN}}|${{ github.run_number }}|g" \
+            -e "s|{{RUN_URL}}|${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|g" \
+            -e "s|{{PACKS}}|${{ inputs.packs }}|g" \
+            -e "s|{{BROWSERS}}|${{ inputs.browsers }}|g" \
+            -e "s|{{RESULT}}|${{ steps.run.outcome == 'success' && 'Passed' || 'With failures' }}|g" \
+            -e "s|{{DATE}}|$(date -u '+%Y-%m-%d %H:%M UTC')|g" \
+            site/index.html
+          [ -d site/ui ] || sed -i '/data-report="ui"/d' site/index.html
+          [ -d site/a11y ] || sed -i '/data-report="a11y"/d' site/index.html
+          [ -f site/test-report.pdf ] || sed -i '/data-report="pdf"/d' site/index.html
+
+      - name: Upload the report site
+        if: always() && inputs.publish
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Fail when tests failed
+        if: steps.run.outcome == 'failure'
+        run: exit 1
+
+  publish:
+    name: Publish to GitHub Pages
+    needs: test
+    if: always() && inputs.publish && needs.test.result != 'cancelled'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

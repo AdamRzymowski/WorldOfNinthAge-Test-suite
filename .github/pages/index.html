@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test reports – World of Ninth Age test suite</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #ffffff; --fg: #1a1a1a; --muted: #4a4a4a; --line: #d0d0d0; --link: #0b5cad; --card: #f5f7fa; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #14161a; --fg: #ececec; --muted: #b8b8b8; --line: #3a3f47; --link: #8ab8ff; --card: #1d2026; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
+    h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+    p { margin: .25rem 0 1rem; color: var(--muted); }
+    dl { display: grid; grid-template-columns: max-content 1fr; gap: .25rem 1rem; margin: 1.5rem 0; }
+    dt { font-weight: 600; } dd { margin: 0; }
+    ul { list-style: none; padding: 0; display: grid; gap: .75rem; }
+    li a { display: block; padding: 1rem; border: 1px solid var(--line); border-radius: .5rem; background: var(--card); color: var(--link); font-weight: 600; text-decoration: underline; text-underline-offset: .2em; }
+    li a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+    li span { display: block; font-weight: 400; color: var(--muted); text-decoration: none; }
+    a { color: var(--link); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Test reports</h1>
+  <p>Latest run of the Playwright test suite for <a href="https://t9a-community.com">t9a-community.com</a>.</p>
+  <dl>
+    <dt>Result</dt><dd>{{RESULT}}</dd>
+    <dt>Packs</dt><dd>{{PACKS}}</dd>
+    <dt>Browsers</dt><dd>{{BROWSERS}}</dd>
+    <dt>Finished</dt><dd>{{DATE}}</dd>
+    <dt>Run</dt><dd><a href="{{RUN_URL}}">GitHub Actions run #{{RUN}}</a></dd>
+  </dl>
+  <h2>Reports</h2>
+  <ul>
+    <li data-report="ui"><a href="ui/index.html">UI Web and Mobile<span>Playwright HTML report: every test, step and screenshot</span></a></li>
+    <li data-report="a11y"><a href="a11y/index.html">Accessibility<span>axe-core against WCAG 2.2 AA, desktop and phone</span></a></li>
+    <li data-report="pdf"><a href="test-report.pdf">Test report (PDF)<span>Summary per pack, compared with the run before</span></a></li>
+  </ul>
+  <p><a href="https://github.com/AdamRzymowski/WorldOfNinthAge-Test-suite">Source on GitHub</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# Code checks on every push and pull request: type-check and lint of the test suite.
+# No tests run here, so nothing touches the live site.
+name: Checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Type-check and lint
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tests/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
