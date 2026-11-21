@@ -30,14 +30,27 @@
     "manual:pdf": "node \"manual tests/build.mjs\"",
     "manual:open": "node \"manual tests/build.mjs\" --open",
     "perf:smoke": "node perf/run.mjs smoke --yes",
-    "release": "node run-packs.mjs --kind=regression --packs=web,mobile,a11y --browsers=chrome"
+    "release": "node run-packs.mjs --kind=regression --packs=web,mobile,a11y --browsers=chrome",
+    "typecheck": "tsc -p .",
+    "lint": "eslint .",
+    "check": "npm run typecheck && npm run lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "quality": "playwright test -c playwright.quality.config.ts"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
+    "@eslint/js": "10.0.1",
     "@playwright/test": "1.64.1",
     "@types/node": "22.15.21",
     "d3": "7.9.0",
+    "eslint": "10.13.0",
+    "eslint-plugin-playwright": "2.12.1",
+    "globals": "17.14.0",
     "leaflet": "1.9.4",
-    "topojson-client": "3.1.0"
+    "prettier": "3.10.1",
+    "topojson-client": "3.1.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.0"
   }
 }
