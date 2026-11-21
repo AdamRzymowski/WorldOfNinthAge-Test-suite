@@ -1,0 +1,19 @@
+{
+  "siteCommit": "f1f23d0",
+  "siteVersion": "1.97",
+  "adapted": {
+    "tests/playwright.config.ts": "7048b55ccd11b7f32fa8dc953bdb8b195007d694322a5dee1053151610468abb",
+    "tests/playwright.a11y.config.ts": "98f3274391b82b1d9e65613bc4d27647d7c29eb7a8d8aa34db643c7d281c0578",
+    "tests/support/ids.ts": "c980d53bb4fec2c373d5ddbc15620c087f91bafa847fb14e747cbf665420f31e",
+    "tests/run-packs.mjs": "38567f03cb995f75912a15c803d4a447ced5994cfea70a2941b93e41e0dbe099",
+    "tests/perf/run.mjs": "a4eacf8da63444eea7b88383f0bc1f6f40b00e112085cd99cc364b507fdcccbc",
+    "tests/package.json": "c904bfd07a8d0134efc76acf927ebb42d23ee2290411af8f4e504c6c242afbac",
+    "tests/tsconfig.json": "15816c9154226d70eed75fa9d309f866d024ebccc15977026e54e14484adee1d",
+    "tests/manual tests/build.mjs": "251d96bf09f1fec201455e8e878f41ea456300cdb0e05f2d064d73a5634216b2",
+    ".claude/agents/playwright-sceptic.md": "6809e24b55123ccd3e950e28da0a73ba08fd531ac0f38e58e2c7266c9b199f3c",
+    ".claude/agents/sanity-checker.md": "5b30cf83c1f159f27e33d8e1cd82747f129d009005f967fb702fffcb6b63fd76",
+    ".claude/skills/playwright-sceptic/SKILL.md": "1e0346d99b908fe8b40953b3e82c34eaab969764da27440b44cd24de7e1558b4",
+    ".claude/skills/sanity-checker/SKILL.md": "dccd8f8972c5390fb75902d321c618639bcc53aa3df1329debfb96ba8407157c",
+    ".claude/skills/release-tests/SKILL.md": "7c94af1c41c9a135e5b0d8d0d90202f6d9600fd9fa92c7a24e5a51080300733b"
+  }
+}
