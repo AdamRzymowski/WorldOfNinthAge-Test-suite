@@ -17,8 +17,16 @@ the commit `site-vX.Y` (the site's version). So:
   `run-packs.mjs`, `perf/run.mjs`, `package.json`, `tsconfig.json`,
   `support/ids.ts`, `manual tests/build.mjs`, and the agents and skills in
   `.claude/`. The sync flags them when the site's versions change, for a
-  change by hand. `support/site-slug.js`, README.md, this file and `docs/`
-  belong to this project alone. `.sync.json` records the last sync.
+  change by hand. `support/site-slug.js`, README.md, this file, `docs/`,
+  `LICENSE`, `.github/`, `tests/quality/`, `tests/playwright.quality.config.ts`,
+  `tests/eslint.config.mjs` and the Prettier files belong to this project
+  alone. `.sync.json` records the last sync.
+- `npm run check` (type-check and lint) runs in CI on every push. Fix what it
+  finds in mirrored files in the site's repository; it reaches here with the
+  next sync.
+
+Project board: https://github.com/users/AdamRzymowski/projects/1 (issues in
+this repository). Reference issues in commits and PRs (`Closes #n`).
 
 ## Running tests: only when asked
 
@@ -79,6 +87,13 @@ the commit `site-vX.Y` (the site's version). So:
   answer states how something is on the live site, check it the way a user
   would, in Chrome (the user's default browser), and log it in
   `docs/sanity-checks.md`.
+- **The Quality Checker** (`.claude/skills/quality-checker/`): with a test
+  run the user asked for when they tick or name it, or when asked for by
+  name. Runs `npm run quality` (inside the network fence), checks findings on
+  their screenshots and files defects in `docs/known-issues/`.
+- **The security and legal scan** (`.claude/skills/security-legal-scan/`):
+  when the user asks. The repository is public: the agent looks for personal
+  data, secrets, gaps in the fence, risky CI and licence problems. Reads only.
 
 ## Git
 
