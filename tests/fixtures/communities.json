@@ -1,0 +1,77 @@
+{
+  "_readme": "Test data served in place of data/communities.json, so the tests don't change whenever a real community is added.",
+  "newRecruitHidden": ["bbbbbbbbbbbbbbbbbbbbbbbb"],
+  "countries": {
+    "Poland": [
+      {
+        "name": "Test Club",
+        "lat": 54.35,
+        "lon": 18.65,
+        "type": "Club/Community",
+        "gamingSpace": true,
+        "region": "Gdańsk",
+        "description": "We meet every Thursday.",
+        "links": [
+          {
+            "type": "discord",
+            "label": "Join the Discord server",
+            "url": "https://discord.gg/testclub"
+          }
+        ]
+      },
+      {
+        "name": "Test Person",
+        "lat": 52.23,
+        "lon": 21.01,
+        "type": "Person",
+        "gamingSpace": false,
+        "region": "Warsaw",
+        "discordUsername": "test_person",
+        "memberOf": "Test Club"
+      }
+    ],
+    "France": [
+      {
+        "name": "Test Store",
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "type": "Store",
+        "gamingSpace": true,
+        "sellsMiniatures": true,
+        "sellsMaterials": true,
+        "region": "Paris",
+        "links": [
+          {
+            "type": "website",
+            "label": "teststore.fr",
+            "url": "https://teststore.fr/"
+          }
+        ]
+      }
+    ]
+  },
+  "events": {
+    "Poland": [
+      {
+        "community": "Test Club",
+        "name": "Test Tournament",
+        "start": "2026-12-05",
+        "end": "2026-12-06",
+        "url": "https://example.com/test-tournament"
+      },
+      {
+        "community": "Test Club",
+        "name": "Weekend Doubles",
+        "start": "2026-11-07",
+        "end": "2026-11-08",
+        "url": "https://example.com/weekend-doubles"
+      },
+      {
+        "community": "Test Club",
+        "name": "Old Cup",
+        "start": "2026-10-01",
+        "url": "https://example.com/old-cup"
+      }
+    ]
+  }
+}

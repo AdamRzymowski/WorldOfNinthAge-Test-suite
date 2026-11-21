@@ -1,0 +1,69 @@
+# World of Ninth Age: test suite
+
+This project holds only the tests for the live site https://t9a-community.com
+(see README.md). The site's code is in its own private repository
+(AdamRzymowski/WorldOfNInthAgers); never copy it here.
+
+## Running tests: only when asked
+
+- **Run tests only when the user says so, in so many words**: never on your
+  own, never after a change unasked, and don't ask "run the tests now?".
+  At most mention that they haven't been run.
+- **Before every run, ask which packs** with `AskUserQuestion`, a
+  multi-select question: "Which test packs should run?" with UI Web, Mobile,
+  Accessibility (these three marked as the default) and Performance. Then
+  ask which browsers: **Chrome only (Recommended)**, or Chrome, Edge and
+  Firefox. Every test downloads the live site, against the Netlify account's
+  monthly allowance.
+- Run the chosen packs from `tests/`, in the background:
+  `node run-packs.mjs --packs=web,mobile,a11y --browsers=chrome`.
+- **Performance** only when the user ticks or names it, and only the smoke
+  run (`--packs=perf`, 1 visitor, 30 s). Never load, spike or soak against
+  the live site.
+- When a run ends, **send the user its PDF report in the chat**
+  (`tests/reports/test-report-<date>.pdf`), with per pack what passed and
+  failed, new failures compared with the previous run, and the
+  accessibility rules broken. Commit the new PDF (the two newest are kept).
+- **Release tests** (a sanity and a regression run after a site release):
+  follow the **release-tests** skill.
+
+## Writing and changing tests
+
+- **IDs only**: tests find every element by its ID (built IDs through
+  `tests/support/ids.ts`); never by class, text, role or XPath.
+- Tests use `tests/fixtures/communities.json`, never the live map's data.
+- Phone and desktop views are switched by the site's `<html data-view>`, not
+  by window width.
+- **Keep the manual cases in step**: when a UI spec is added or changed,
+  add or change its case in `tests/manual tests/cases.mjs` in the same
+  change.
+- **Never fix accessibility tests** (the user's rule); report what they
+  find.
+- When the site changes `slug()` in its `js/ids.js`, copy it into
+  `tests/support/site-slug.js`.
+
+## Safety
+
+- The network fence in `tests/support/test.ts` must stay: no test may post
+  a form to the live site, call its functions, or reach New Recruit or
+  OpenStreetMap. Never loosen it.
+- **Never call New Recruit** (newrecruit.eu) in any way: not from tests,
+  scripts or the browser.
+- Never open the site's private Netlify forms (`change-request`,
+  `bug-report`, `community-tip`, `private-alert`), never enter credentials,
+  and never submit anything on the live site unless the user asks for that
+  one submission.
+
+## The test agents
+
+- **The Playwright Sceptic** (`.claude/skills/playwright-sceptic/`): when the
+  user asks to check the tests' validity. Reads only; findings are checked,
+  shown as tick boxes, and nothing is fixed until the user picks.
+- **The Sanity Checker** (`.claude/skills/sanity-checker/`): whenever an
+  answer states how something is on the live site, check it the way a user
+  would, in Chrome (the user's default browser), and log it in
+  `docs/sanity-checks.md`.
+
+## Git
+
+Commit or push only when the user asks. Use they/them for everyone.

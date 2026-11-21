@@ -1,0 +1,43 @@
+{
+  "name": "world-of-ninth-age-test-suite",
+  "private": true,
+  "type": "module",
+  "description": "Tests for the live site https://t9a-community.com: Playwright UI specs, axe-core accessibility and a k6 smoke run. The site's own code lives in its own repository.",
+  "scripts": {
+    "setup": "npm install && playwright install firefox chrome msedge",
+    "test": "node run-packs.mjs",
+    "test:web": "playwright test --project=chrome --project=edge --project=firefox",
+    "test:chrome": "playwright test --project=chrome --project=chrome-mobile",
+    "test:edge": "playwright test --project=edge --project=edge-mobile",
+    "test:firefox": "playwright test --project=firefox --project=firefox-mobile",
+    "test:mobile": "playwright test --project=chrome-mobile --project=edge-mobile --project=firefox-mobile",
+    "test:headed": "playwright test --headed --project=chrome --workers=1",
+    "test:headed:all": "playwright test --headed --project=chrome --project=edge --project=firefox --project=chrome-mobile --project=edge-mobile --project=firefox-mobile",
+    "test:ui": "playwright test --ui",
+    "test:all": "node run-packs.mjs --packs=all",
+    "test:report": "node run-report.mjs ui",
+    "test:a11y": "playwright test -c playwright.a11y.config.ts",
+    "test:a11y:headed": "playwright test -c playwright.a11y.config.ts --headed --project=a11y-desktop --workers=1",
+    "test:a11y:report": "node run-report.mjs a11y",
+    "perf": "node perf/run.mjs smoke",
+    "report": "playwright show-report reports/ui",
+    "report:a11y": "playwright show-report reports/a11y",
+    "report:perf": "node perf/run.mjs open",
+    "report:pdf": "node report/build.mjs --show=pdf",
+    "report:csv": "node report/build.mjs --show=csv",
+    "report:build": "node report/build.mjs --open",
+    "manual": "node \"manual tests/capture.mjs\" && node \"manual tests/build.mjs\"",
+    "manual:pdf": "node \"manual tests/build.mjs\"",
+    "manual:open": "node \"manual tests/build.mjs\" --open",
+    "perf:smoke": "node perf/run.mjs smoke --yes",
+    "release": "node run-packs.mjs --kind=regression --packs=web,mobile,a11y --browsers=chrome"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "@types/node": "22.15.21",
+    "d3": "7.9.0",
+    "leaflet": "1.9.4",
+    "topojson-client": "3.1.0"
+  }
+}

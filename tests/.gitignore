@@ -1,0 +1,10 @@
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+.cache/
+reports/*
+!reports/test-report-*.pdf
+manual tests/screenshots/
+manual tests/*.html
+manual tests/.capture.json

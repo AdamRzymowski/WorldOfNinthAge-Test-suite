@@ -1,0 +1,1170 @@
+{
+ "bug.spec.ts › the button is in the top left corner, beside the language (on a phone, the last item in the menu)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "bug.spec.ts › the form › keeps to the lengths the server allows": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "bug.spec.ts › the form › needs a title and a description": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "bug.spec.ts › the form › only its buttons close it, not Escape; opening it again starts empty": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "bug.spec.ts › the form › sends the report to Netlify Forms, with the page it came from": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "change.spec.ts › every card offers it, and Update under Add event: clubs, stores and people": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "change.spec.ts › the form › asks what it's about; a report needs what's wrong and a good-faith tick": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "change.spec.ts › the form › needs a reason and a contact to verify": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "change.spec.ts › the form › needs only a contact to verify: a reason is optional, and it says removal takes at most a month": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "change.spec.ts › the form › only its buttons close it, not Escape": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "change.spec.ts › the form › sends the request to Netlify Forms for that entry": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › a club's card lists its members, and a member's card links back": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › a community's card shows its details and contacts": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › a member of a club that isn't on the map shows no membership": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › a neighbour's card offers to switch to its country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › a store that sells T9A-compatible miniatures or T9A-related materials says so on its card": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › adds submissions approved since the last deploy, without repeating known ones": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › lists clubs and stores under Communities and individuals under People": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › only a gaming space gets a tag, not the lack of one": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › only its buttons close it, not Escape": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › shows the communities of every country on the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › shows the real map, with no painted view to switch to": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › still works when the approved-submissions function is down": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › the back button returns to the world map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "country.spec.ts › the contacts come under \"Contact us here:\", or for a person \"Contact me here:\"": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "drop.spec.ts › a file dropped elsewhere in an open form is ignored, not opened by the browser": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "drop.spec.ts › an image dropped on an event's logo row becomes its logo": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "drop.spec.ts › an image dropped on the banner's logo row becomes its logo": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "drop.spec.ts › images dropped on the gallery's row are picked, up to three": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › \"Online event\" swaps the address for the hosting country, and sends no place": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › a hosted event stays in its host's country, wherever its address": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › an address found on the map sends its spot": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › kept in the country picked, an event with an address abroad has no spot on the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › the address says it's shown publicly, so not to give a private home address": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › the host is picked from everyone here, or no one": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › tied to no one, an address in another country asks which country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › tied to no one, it needs an address or Online event": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › with a host picked, the address is optional": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › \"Add event\" under the country's name › won't send an event name with an email address or phone number": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › a person can host an event, and it links to their card": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › a store offers it too": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › every card offers it: clubs with or without gaming space, and people": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › \"One-day event\" goes for a weekly event, and \"Last day\" comes back without it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › \"One-day event\" leaves only the date: no \"Last day\", none sent": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › \"Recurring weekly\" swaps the date for a day of the week, and \"Last day\" for an optional last session": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › a weekly event needs its day of the week": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › needs a name, a date and a link": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › only its buttons close it, not Escape": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › rejects a date that has passed, or a last day before the first": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › rejects a last session before the first": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › sends a weekly event from the next such day (today included), with its last session": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › sends the event to Netlify Forms, for its host and country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › Add event › the form › the logo's + opens the file picker too": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › a country with a host but no events says so": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › a country with no one on the map and no events shows no events section": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › a country with no one on the map shows no events section": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "events.spec.ts › a league from New Recruit still running shows since when, marked League": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › a weekly event › moves to past events two days after its last session": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › a weekly event › on its day, today's session is the next one": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › a weekly event › shows its weekday and next session, and is sorted by it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › a weekly event › stays upcoming however long ago it started": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › adds New Recruit's tournaments, credited to it, unless the country already has them": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › adds events approved since the last deploy, without repeating known ones": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › an event moves to past events two days after its last day": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › an event tied to no one shows its address, an online one says so, and only the first is on the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › an event with a New Recruit link carries New Recruit's logo, linking to it; others don't": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › each event has a Report button, opening the form about that event": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › lists a country's upcoming events, soonest first, with their day and host": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › past events are one click away": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "events.spec.ts › the world map credits New Recruit in its lower right corner, with its logo and a link": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › Has gaming space shows only those with one": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › Show events switched off takes the events' crossed swords off the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › a click switches a button off (a red x) and back on (a green tick)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › can show only those with a gaming space": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "filter.spec.ts › closes the card of a community it hides": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › is off at first, with its options hidden": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "filter.spec.ts › its five buttons sit beside Go back: the four kinds on (a green tick), Has gaming space off (a red x)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › keeps its choice in the next country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › on a desktop, Go back lines up with the map's left edge, the buttons on its right above the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › says when nothing matches, and switching everything back on shows it all again": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › says when nothing matches, and switching it off shows everything again": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "filter.spec.ts › shows only the chosen types, in the lists and on the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "filter.spec.ts › the list beside the map (what the filter leaves) is the phone view's only": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "gallery.spec.ts › Add images › refuses more than three, none, or without agreeing they'll be public": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "gallery.spec.ts › Add images › sends up to three images, made smaller, for that entry": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "gallery.spec.ts › each image has a Report button, opening the form about that photo": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "gallery.spec.ts › every card has one, for people, communities and stores": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "gallery.spec.ts › shows the entry's images and approved ones, opening full size": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "gallery.spec.ts › the banner form has no store-front photo any more": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › ?lang= picks one, and the choice stays for the next visit": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › English for an English browser, with a selector of all thirteen": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › English for an English browser, with a selector of all twelve": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "i18n.spec.ts › Greek is set in a font that has Greek letters": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › Ukrainian is set in fonts that have Cyrillic letters": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › a browser in Norwegian nynorsk › gets Norwegian (bokmål), the one Norwegian there is": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › a browser in Polish › gets Polish without choosing": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › a country can be picked by its name in the language": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › a country can be searched for by its name in the language": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "i18n.spec.ts › a long country name stays whole, centred and clear of ×": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › country names, dates and counts are in the language": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › cs: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › cs: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › da: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › da: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › de: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › de: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › el: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › el: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › es: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › es: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › fi: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › fi: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › forms send the same values in every language": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › fr: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › fr: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › it: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › it: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › nb: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › nb: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › pl: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › pl: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › sv: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › sv: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › the privacy page follows the choice": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › the selector is in the page's top left, beside \"Report a bug\" (on a phone, alone in the top right corner)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › the selector is in the page's top right corner, above the emblem on a wide screen": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "i18n.spec.ts › the selector reloads the page in the language, and remembers it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › uk: every text is translated, on the home page, in a country and in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › uk: nothing sticks out sideways, on the home page and in a country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "i18n.spec.ts › what visitors wrote stays as they wrote it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "ids.spec.ts › every ID is used once, and everything a visitor can use has one: the world map and its filters": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "ids.spec.ts › items built from a name keep the same ID in every language": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "ids.spec.ts › …in a country, its card and lists, and with the filter on": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "ids.spec.ts › …in every form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "ids.spec.ts › …on the privacy page": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › planting on an existing community ignores it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › planting on the map opens the form for that spot": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › \"Plant my banner!\" at the top and again at the end, and the × to close": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › Escape doesn't lose what was typed": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › a Person can pick one of the country's clubs": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › a Store ticks what it sells: T9A-compatible miniatures, T9A-related materials, both or neither; no one else is asked": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › a Store's ticks are sent as Yes": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › a club isn't asked what it sells, even after Store was ticked first": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › a club sends no membership, even if one was picked first": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › an address in another country asks which country › the address's country: the banner goes there, at the address": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › an address in another country asks which country › the country picked: the banner stays there, where it was planted": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › has one button, \"Plant my banner!\", and the × to close": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "join.spec.ts › the form › keeps the planted spot when the address isn't found": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › marks every empty required section": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › moves the banner to the address when it can be found, without asking in its own country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › needs agreeing that it will be public, with a link to the privacy note": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › rejects a Discord link that isn't an invite": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › rejects a WhatsApp link that doesn't lead to WhatsApp": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › shows the 24-hour note in bold, with no Done button: the × or the big tick closes it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the \"Plant my banner!\" at the end sends it too": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the agreement is the last thing in the form": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the big green tick closes the form too": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the logo's + opens the file picker too": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the town or city › a town found more than 30 km from the banner asks; \"Send without the town\" sends without it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the town or city › a town near the banner is sent with no question": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the town or city › a town the search can't find is sent as written, with no question": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the town or city › is at most 60 characters, and may not hold an email address or phone number": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › the town or city › with no town, it asks first: \"Add my town or city\" goes back to the field, \"Send without it\" sends": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "join.spec.ts › the form › won't send an email address or phone number in what's shown on the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › \"Add a community, store or yourself on the map\" and \"Add event\" come first under the country's name, then \"Go back\"": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › \"Show only online events\" is a red button, gold while ticked": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › a country with no events section keeps only the list beside the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › a filter button grows under the pointer, and its row stays put when one is switched off": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › a form's title is square and black; its buttons are red and rounded": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › a switched-on button turns gold, so it reads as pressed": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › an open window stops the page behind it scrolling, so no idle scroll bar shows": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › every button grows a little under the pointer, and back after": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › in a country, buttons are red and rounded; the name and headings are square and black": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › on a card, every button and contact link is red and rounded; the tags are square and black": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › on the home page, the join, language and news buttons are red and the news bar is black": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › the country's name, Add and Go back are centred across the top of the window; \"Plant your banner on the map!\" over the map": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "look.spec.ts › the country's name, Add and the filter's buttons are centred across the top of the window; \"Plant your banner on the map!\" over the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › the join button grows in place, staying centred": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › the list beside the map never scrolls sideways, and opening the filter doesn't make it longer": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "look.spec.ts › the list beside the map never scrolls sideways": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "look.spec.ts › upcoming events have a column of their own: beside the list on a wide screen, under it otherwise": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "major.spec.ts › a link that isn't a web address isn't shown": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "major.spec.ts › lists the upcoming ones, soonest first, with their days, place and links, New Recruit's first": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "major.spec.ts › the tab isn't there when every major event is over": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "major.spec.ts › the tab isn't there without a major event": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › New Recruit's credit sits in the map's bottom right corner, above the placeholder note": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › a card fits the screen, with Add event, Update and the contacts in reach": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › a country fits the screen: the map, then the list under it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › a country opens with its map first: its name and ×, Add, Add event and Go back come under it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › a country's section buttons wrap instead of running off the screen": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › a filter chosen in the menu changes the map and closes the menu; while on, it reads \"Show everything again\"": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › de: the menu's longer words wrap onto more lines, never past its side": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › el: the menu's longer words wrap onto more lines, never past its side": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › fi: the menu's longer words wrap onto more lines, never past its side": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › no Filter button sits on the map any more: the filter is under it (CR-12)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the Filter button and its options fit the screen": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "mobile.spec.ts › the banner form fits the screen: the send button at the top, the agreement at the bottom": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the bottom block (the news bar with ☰, and \"Select a country to start\") stays put while the page scrolls": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the filter's buttons fit the screen, two a line under Go back": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the gallery and deletion forms fit the screen": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the major events and Report a bug open from the menu, closing it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the menu closes with ☰ and Escape, but not with a tap on the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the menu: Filter on the map, the major events, Learn more about Ninth Age, Who makes this map and Privacy side by side, then Report a bug, all as wide as each other (the filters under it smaller)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the news banner fits the screen": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the privacy note fits the screen": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the privacy page opens at its top with \"Back to the map\" as a button, and scrolls to its end": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the world map page fits the screen, with \"Select a country to start\" always in reach at the bottom": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › the world map page fits the screen, with the join button and search in reach": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "mobile.spec.ts › under \"Filter on the map\", the filters are smaller than the menu's buttons, with the blue glow": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › with a filter on, \"Show everything again\" sits at the map's bottom middle, and resets it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › with something filtered out, the map is two thirds wide and the list beside it shows what's left; a tap opens its card": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "mobile.spec.ts › ☰ sits at the right end of the news bar, right above \"Select a country to start\"; the zoom buttons in the map's bottom left": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "sections.spec.ts › a card from another section offers to switch to it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "sections.spec.ts › a country with territories lists each in its own section": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "sections.spec.ts › a country without territories has no section buttons": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "sections.spec.ts › a territory the map draws on its own opens as its country's section": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "sections.spec.ts › a territory's name opens its section, from the address or the search": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "sections.spec.ts › parts of a country's own shape: Spain's Canary Islands, Portugal's Azores": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › a contact whose link isn't a web address doesn't become a link": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › a name or comment with HTML in it is shown as text, never run": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › a visit asks nothing of Google Fonts or a CDN: fonts, libraries and icons are the site's own": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › an event can't be sent without agreeing it will be public": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › an event with HTML in its name is shown as text": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › an update and gallery images say they're checked first, without promising 24 hours": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › both forms that look up an address credit OpenStreetMap under the field": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › every public form has a hidden honeypot field for bots": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › links on a card open in a new tab without access back to the site": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › the Content-Security-Policy stops a script or image slipped into the page from outside": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › the alert forms are in the page for Netlify to find, never shown": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › the home page and the privacy note say it's a fan-made map, not The Ninth Age's own": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "security.spec.ts › the privacy note says what's public, what's private and how to remove an entry": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "security.spec.ts › the privacy note says who runs the map, what's public and private, why, who else gets data, for how long, your rights and how to remove an entry": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "tip.spec.ts › asks for the name before sending": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "tip.spec.ts › only its buttons close it, not Escape": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "tip.spec.ts › says so when sending fails": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "tip.spec.ts › sends the tip to Netlify Forms and thanks the visitor": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "update.spec.ts › a store's update has its tick boxes filled in as on the map": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "update.spec.ts › an approved update replaces the entry's details; members follow a new name": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "update.spec.ts › an entry with no town is asked for one when updated (\"Your town or city?\")": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "update.spec.ts › an update keeps its country, even with an address abroad, so it finds its entry": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "update.spec.ts › an update that moves an entry far away, or takes another's name, is skipped": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "update.spec.ts › opens the banner form with the entry's details": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "update.spec.ts › planting a new banner afterwards is a new submission again": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "update.spec.ts › sends the changes as an update to that entry": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "view.spec.ts › a country left open keeps working through the switch": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "view.spec.ts › a phone opens the phone view, a computer the desktop view": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "view.spec.ts › a phone turned on its side stays in the phone view": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "view.spec.ts › narrowing the window switches to the phone view and widening it switches back, with nothing left of the other": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "view.spec.ts › the privacy note has the same two views": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › a country with only events gets a seal, and opens to its events": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › a country's name in the list opens that country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › each event in the list has a Report button, opening the form about it": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › event seals are black, with gold edges and numbers": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › leagues are listed after the other events, and \"Show only online events\" keeps only online ones, in the list and the seals": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › off at first: the list is closed and the seals count communities": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world-events.spec.ts › off at first: the list is closed, and the map shows communities and events": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › on, every country's upcoming events are listed, soonest first, and only their seals show": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › on, every country's upcoming events are listed, soonest first, and the seals count them": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world-events.spec.ts › on, the button says \"Show everything again\", and that brings everything back": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › on, the button says \"Show the communities again\", and that brings them back": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world-events.spec.ts › the button is under \"Learn more about Ninth Age\" (in the menu under \"Filter on the map\" on a phone), the list on the map's right side (under the map on a phone)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-events.spec.ts › while it's on, a phone also has \"Show everything again\" over the map; a desktop doesn't": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-stores.spec.ts › a store's name opens its card; a country's name opens the country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-stores.spec.ts › off at first: the list is closed, and the map shows communities and events": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-stores.spec.ts › on, only the stores selling T9A miniatures or materials are listed, by country, and the seals count them": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-stores.spec.ts › on, the button says \"Show everything again\", and that brings everything back": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-stores.spec.ts › one filter at a time: Show only stores turns Show only events off, and back": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world-stores.spec.ts › the button is under Show only events (in the menu too, on a phone), the list in the same place as the events'": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › \"Learn more about Ninth Age\" (top right) is level with \"Major global community events\" (top left); the language and \"Report a bug\" are above the major events; \"Show only events\" and \"Show only stores\" under \"Learn more\"": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › \"Select a country to start\", the + before the words, on the map's \"Choose the Country\" plaque (under the map on narrower screens; on a phone, large at the bottom of the screen, always there), in the middle": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › Escape closes the list, a second Escape stops choosing; clicking the map still works": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › YouTube and Facebook links sit in the bottom right corner": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world.spec.ts › YouTube, Facebook, Discord and forum links sit in the bottom right corner": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › a #country link opens that country": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › a bar along the bottom has a \"T9A News!\" button to the Ninth Age news (on a phone, fixed right above \"Select a country to start\")": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › a bar along the bottom has a \"T9A News!\" button to the Ninth Age news": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world.spec.ts › an unknown country name opens nothing": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world.spec.ts › choosing a country after it goes straight to planting a banner": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › draws the world's countries": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › once clicked, the button gives way to \"Choose a country to start\" in its place": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › one button invites visitors to put themselves on the map, the + before the words": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world.spec.ts › picking a country from the list goes straight to planting a banner": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › searching for a country opens it": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world.spec.ts › the banner never covers the search at the end of the page": {
+  "version": "1.48",
+  "date": "2026-11-10"
+ },
+ "world.spec.ts › the bottom bar links to who makes the map and to the privacy note (on a phone, the ☰ menu)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › the fan-made note at the end of the page clears the news bar": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › the next major events show under their button, each opening the full list": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › the painted map says in small print it's an AI-generated temporary placeholder, in its bottom left corner (bottom right on a phone, where the zoom buttons take the left)": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › there is no \"Find players near you\" plaque any more": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › there is no search box above the map any more: the country is picked with \"Select a country to start\"": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › typing a country and pressing Enter picks the first match; the arrow keys move through the list": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ },
+ "world.spec.ts › while choosing, a box under the hint lists every country, narrowed as one types": {
+  "version": "1.86",
+  "date": "2026-11-16"
+ }
+}
