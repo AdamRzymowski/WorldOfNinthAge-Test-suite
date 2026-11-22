@@ -27,7 +27,10 @@ on:
         default: chrome
         options:
           - chrome
+          - chrome,safari
+          - safari
           - chrome,edge,firefox
+          - chrome,edge,firefox,safari
       publish:
         description: "Publish the report to GitHub Pages"
         type: boolean
@@ -62,6 +65,7 @@ jobs:
           npx playwright install --with-deps chrome
           if [[ "${{ inputs.browsers }}" == *edge* ]]; then npx playwright install --with-deps msedge; fi
           if [[ "${{ inputs.browsers }}" == *firefox* ]]; then npx playwright install --with-deps firefox; fi
+          if [[ "${{ inputs.browsers }}" == *safari* ]]; then npx playwright install --with-deps webkit; fi
 
       - name: Run the packs
         id: run

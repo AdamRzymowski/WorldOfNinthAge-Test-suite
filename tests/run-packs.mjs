@@ -24,7 +24,8 @@
 //
 // --base-url tests another deployed site instead of the live one;
 // --kind names the report (release-sanity-report-...); --browsers keeps only
-// those browsers' projects (each test loads the site, against Netlify's
+// those browsers' projects: chrome, edge, firefox, safari (WebKit, only
+// when named) (each test loads the site, against Netlify's
 // allowance).
 //
 // Anything else is passed on to Playwright, e.g. a spec file or -g "words".
@@ -35,8 +36,8 @@ import { fileURLToPath } from "node:url";
 
 const TESTS = fileURLToPath(new URL(".", import.meta.url));
 const PACKS = [
-  { id: "web", label: "UI Web", hint: "Chrome, Edge and Firefox on a desktop", projects: ["chrome", "edge", "firefox"] },
-  { id: "mobile", label: "Mobile", hint: "Chrome, Edge and Firefox on a phone", projects: ["chrome-mobile", "edge-mobile", "firefox-mobile"] },
+  { id: "web", label: "UI Web", hint: "Chrome, Edge and Firefox on a desktop", projects: ["chrome", "edge", "firefox", "safari"] },
+  { id: "mobile", label: "Mobile", hint: "Chrome, Edge and Firefox on a phone", projects: ["chrome-mobile", "edge-mobile", "firefox-mobile", "safari-mobile"] },
   { id: "a11y", label: "Accessibility", hint: "every view against WCAG 2.2 AA, desktop and phone" },
   { id: "perf", label: "Performance", hint: "k6 smoke run of the live site: 1 visitor, 30 seconds" },
 ];
@@ -85,7 +86,8 @@ for (const file of ["ui", "ui.json", "a11y", "a11y.json", "perf.html", "perf.jso
 const runs = [];
 const projects = PACKS.filter((p) => p.projects && chosen.includes(p.id))
   .flatMap((p) => p.projects)
-  .filter((name) => !browsers || browsers.some((b) => name === b || name.startsWith(`${b}-`)));
+  // Safari (WebKit) only when named: --browsers=safari, or with others (chrome,safari).
+  .filter((name) => (browsers ? browsers.some((b) => name === b || name.startsWith(`${b}-`)) : !name.startsWith("safari")));
 if (projects.length) {
   const label = PACKS.filter((p) => p.projects && chosen.includes(p.id)).map((p) => p.label).join(" + ");
   runs.push([label, ["run-report.mjs", "ui", ...projects.map((p) => `--project=${p}`), ...(headed ? ["--headed"] : []), ...passOn]]);

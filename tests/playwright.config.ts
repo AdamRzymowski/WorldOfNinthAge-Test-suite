@@ -27,6 +27,11 @@ const web: Project[] = [
       deviceScaleFactor: PHONE.deviceScaleFactor,
     },
   },
+  // Safari's engine (WebKit), on a desktop and an iPhone. Only when named
+  // (--browsers=safari or --project=safari): run-packs.mjs leaves it out of
+  // the usual runs, so they don't download the site a fourth time.
+  { name: "safari", use: { ...devices["Desktop Safari"], viewport: DESKTOP } },
+  { name: "safari-mobile", use: { ...devices["iPhone 14"] } },
 ].map((project) => ({ ...project, testDir: "./specs" }));
 
 // Only the list in the terminal (and GitHub's notes on GitHub), unless run
