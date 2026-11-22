@@ -90,8 +90,8 @@ test.describe("Major global community events", () => {
     await world.goto();
     await world.openMajorEvents();
     const open = itemId("major-event", "Test Open", "2026-11-21");
-    const card = (await page.locator().boundingBox())!;
-    const boxes = await page.locator().evaluateAll((links) => links.map((a) => ({ ...a.getBoundingClientRect().toJSON(), align: getComputedStyle(a).justifyContent })));
+    const card = (await page.locator(`#${open}`).boundingBox())!;
+    const boxes = await page.locator(`#${open}-links > a`).evaluateAll((links) => links.map((a) => ({ ...a.getBoundingClientRect().toJSON(), align: getComputedStyle(a).justifyContent })));
     expect(boxes).toHaveLength(2);
     for (const box of boxes) {
       expect(box.width).toBeGreaterThan(card.width - 30); // across the card (its padding aside)

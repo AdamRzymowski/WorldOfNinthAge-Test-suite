@@ -141,9 +141,10 @@ test.describe("Languages", () => {
       await expectFitsSideways(page, "country");
       // The longest buttons: their words stay inside them. (Found by place:
       // the page objects name them in English.)
-      for (const button of ["#add-button", "#add-event-button", "#country-back", "#filter-person", "#filter-store", "#filter-event", "#filter-club", "#filter-space"].map((id) => page.locator(id))) {
+      for (const id of ["#add-button", "#add-event-button", "#country-back", "#filter-person", "#filter-store", "#filter-event", "#filter-club", "#filter-space"]) {
+        const button = page.locator(id);
         const fits = await button.evaluate((el) => el.scrollWidth <= el.clientWidth + 1);
-        expect(fits, await button.textContent()).toBe(true);
+        expect(fits, `${id}: "${(await button.textContent()) ?? ""}" fits its button`).toBe(true);
       }
       await country.addButton.click();
       const hint = (await country.plantHint.boundingBox())!;
