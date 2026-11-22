@@ -41,6 +41,8 @@ export default tseslint.config(
             "expectInfo",
             "expectNoSidewaysScroll",
             "expectOpen",
+            "expectModalNamed",
+            "tabTo",
           ],
         },
       ],

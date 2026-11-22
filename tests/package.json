@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Tests for the live site https://t9a-community.com: Playwright UI specs, axe-core accessibility and a k6 smoke run. The site's own code lives in its own repository.",
   "scripts": {
-    "setup": "npm install && playwright install firefox chrome msedge",
+    "setup": "npm install && playwright install firefox chrome msedge webkit",
     "test": "node run-packs.mjs",
     "test:web": "playwright test --project=chrome --project=edge --project=firefox",
     "test:chrome": "playwright test --project=chrome --project=chrome-mobile",
@@ -36,7 +36,11 @@
     "check": "npm run typecheck && npm run lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "quality": "playwright test -c playwright.quality.config.ts"
+    "quality": "playwright test -c playwright.quality.config.ts",
+    "test:safari": "playwright test --project=safari --project=safari-mobile",
+    "visual": "playwright test -c playwright.visual.config.ts",
+    "visual:update": "playwright test -c playwright.visual.config.ts --update-snapshots",
+    "vitals": "playwright test -c playwright.vitals.config.ts"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",

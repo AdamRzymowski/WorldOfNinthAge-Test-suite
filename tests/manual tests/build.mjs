@@ -43,6 +43,7 @@ const FEATURES = {
   "i18n.spec.ts": "Languages",
   "security.spec.ts": "Security",
   "drop.spec.ts": "Drag and drop images",
+  "keyboard.spec.ts": "Keyboard only",
 };
 const BROWSER = { chrome: "Chrome", edge: "Edge", firefox: "Firefox", "chrome-mobile": "Chrome", "edge-mobile": "Edge", "firefox-mobile": "Firefox" };
 

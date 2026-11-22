@@ -22,7 +22,8 @@ a separate private repository. This repository holds only the tests, and tests w
 | Area | How |
 |---|---|
 | **End-to-end UI testing** | 279 Playwright tests in TypeScript over 21 spec files, page objects, custom fixtures, fixed clock and test data |
-| **Cross-browser and mobile** | Chrome, Edge and Firefox, each on a desktop and a phone (Pixel 7): 1,674 test runs in a full pass |
+| **Cross-browser and mobile** | Chrome, Edge and Firefox, each on a desktop and a phone (Pixel 7): 1,674 test runs in a full pass; Safari (WebKit) on a desktop and an iPhone when named |
+| **Visual regression and Web Vitals** | Screenshot comparisons of six key views; LCP, CLS and TTFB budgets in Chrome |
 | **Accessibility** | axe-core against WCAG 2.0/2.1/2.2 A and AA on 29 views, desktop and phone, with the broken rules grouped in the report |
 | **Safe testing in production** | A network fence answers every form post, API call and third-party request inside the browser, so the live site is tested without side effects |
 | **Performance** | k6 smoke run of the live site (1 visitor, 30 s); load, spike and soak profiles for a local copy |
@@ -71,6 +72,8 @@ They read and report; none of them changes tests or code. Each is started by its
 | `tests/specs/` | Playwright end-to-end tests of the site (UI Web and Mobile packs) |
 | `tests/a11y/` | Accessibility tests: axe-core against WCAG 2.2 AA |
 | `tests/quality/` | The Quality Checker's measuring run |
+| `tests/visual/` | Visual regression: key views against approved screenshots |
+| `tests/vitals/` | Web Vitals budget |
 | `tests/pages/`, `tests/support/` | Page objects, the network fence, ID helpers |
 | `tests/fixtures/communities.json` | The test data the tests use instead of the live map's data |
 | `tests/perf/` | k6: a smoke run (1 visitor, 30 s) of the live site |
@@ -101,6 +104,9 @@ From `tests/`:
 | `npm run test:a11y` | Accessibility only |
 | `npm run release` | A regression run in Chrome, reported as a release check |
 | `npm run perf:smoke` | The k6 smoke run of the live site |
+| `npm run test:safari` | Safari's engine (WebKit), desktop and iPhone (only when named) |
+| `npm run visual` | Visual regression against approved screenshots (`visual:update` makes them) |
+| `npm run vitals` | Web Vitals budget: LCP, CLS and TTFB on the home page and a country |
 | `npm run quality` | The Quality Checker's measuring run (`QUALITY_LANGS`, `QUALITY_WIDTHS`) |
 | `npm run report:build` | Remakes the PDF and CSV report from the last run |
 | `npm run check` | Type-check and lint (what CI runs on every push) |

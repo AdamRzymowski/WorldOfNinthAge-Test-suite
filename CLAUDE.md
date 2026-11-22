@@ -18,7 +18,8 @@ the commit `site-vX.Y` (the site's version). So:
   `support/ids.ts`, `manual tests/build.mjs`, and the agents and skills in
   `.claude/`. The sync flags them when the site's versions change, for a
   change by hand. `support/site-slug.js`, README.md, this file, `docs/`,
-  `LICENSE`, `.github/`, `tests/quality/`, `tests/playwright.quality.config.ts`,
+  `LICENSE`, `.github/`, `tests/quality/`, `tests/visual/`, `tests/vitals/`,
+  their `tests/playwright.{quality,visual,vitals}.config.ts`,
   `tests/eslint.config.mjs` and the Prettier files belong to this project
   alone. `.sync.json` records the last sync.
 - `npm run check` (type-check and lint) runs in CI on every push. Fix what it
@@ -41,6 +42,9 @@ this repository). Reference issues in commits and PRs (`Closes #n`).
   monthly allowance.
 - Run the chosen packs from `tests/`, in the background:
   `node run-packs.mjs --packs=web,mobile,a11y --browsers=chrome`.
+- **Safari (WebKit)**, **visual regression** (`npm run visual`; `visual:update`
+  makes or accepts the baselines, which are committed) and the **Web Vitals
+  budget** (`npm run vitals`) run only when the user names them.
 - **Performance** only when the user ticks or names it, and only the smoke
   run (`--packs=perf`, 1 visitor, 30 s). Never load, spike or soak against
   the live site.

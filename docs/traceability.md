@@ -42,11 +42,14 @@ tests where one case covers a test repeated per language (`*`).
 | Mobile | `playwright.config.ts` | chrome-mobile, edge-mobile, firefox-mobile | 279 | 837 |
 | Accessibility | `playwright.a11y.config.ts` | a11y-desktop, a11y-phone | 29 | 58 |
 | Quality | `playwright.quality.config.ts` | quality-phone-412, quality-desktop-1366 | 13 views × 4 languages | 104 |
+| Safari (when named) | `playwright.config.ts` | safari, safari-mobile | 279 | 558 |
+| Visual regression | `playwright.visual.config.ts` | visual-desktop, visual-phone | 6 views | 12 |
+| Web Vitals | `playwright.vitals.config.ts` | vitals-desktop, vitals-phone | 2 views | 4 |
 | Performance | `perf/run.mjs` (k6) | smoke | 1 visitor, 30 s | 1 |
 
 ## Open coverage work
 
 Tracked as issues on the [project board](https://github.com/users/AdamRzymowski/projects/1):
-keyboard-only form flows (#10), screen-reader checks (#11), API checks (#12,
-#13), Web Vitals budget (#14), visual regression (#15), WebKit (#16),
-remaining manual cases (#17).
+API checks (#12, #13), on hold. Keyboard-only flows (#10) and screen-reader
+checks (#11) are written in the site's repository and arrive with its next
+sync (`keyboard.spec.ts`, `a11y/semantics.spec.ts`).
